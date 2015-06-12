@@ -1,0 +1,40 @@
+package com.lodogame.game.dao.clearcache;
+
+import org.apache.log4j.Logger;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+import com.lodogame.game.dao.initcache.InitCacheManager;
+import com.lodogame.game.dao.initcache.InitCacheOnLogin;
+
+public class CacheInit implements BeanPostProcessor {
+	private static final Logger LOG = Logger.getLogger(CacheInit.class);
+
+	/**
+	 * 是在bean加载每个bean之前，都会调用该办法。
+	 */
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+		if (bean instanceof ClearCacheOnLoginOut) {
+
+			ClearCacheOnLoginOut cache = (ClearCacheOnLoginOut) bean;
+			ClearCacheManager.getInstance().addCache(cache);
+			LOG.info("加载用户登出后清理缓存类" + cache.getClass().getSimpleName() + ";");
+
+		}
+
+		if (bean instanceof InitCacheOnLogin) {
+
+			InitCacheOnLogin cache = (InitCacheOnLogin) bean;
+			InitCacheManager.getInstance().addCache(cache);
+			LOG.info("加载用户登入后初始化缓存类" + cache.getClass().getSimpleName() + ";");
+
+		}
+
+		return bean;
+	}
+
+	@Override
+	public Object postProcessAfterInitialization(Object bean, String arg1) throws BeansException {
+		return bean;
+	}
+}

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	 	http://www.springframework.org/schema/aop 
+	 	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+     	http://www.springframework.org/schema/tx 
+     	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+	<bean id="exDao" class="com.lodogame.game.dao.impl.cache.ExDaoCacheImpl" init-method="init">
+		<property name="exDaoMysqlImpl" ref="exDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="gemAltarDao" class="com.lodogame.game.dao.impl.cache.GemAltarDaoCacheImpl" init-method="init">
+		<property name="gemAltarDaoMysqlImpl" ref="gemAltarDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="meridianDao" class="com.lodogame.game.dao.impl.cache.MeridianDaoCacheImpl" init-method="init">
+		<property name="meridianDaoMysqlImpl" ref="meridianDaoMysqlImpl"></property>
+	</bean>
+	<bean id="meridianDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.MeridianDaoMysqlImpl"></bean>
+	<bean id="userDao" class="com.lodogame.game.dao.impl.cache.UserDaoCacheImpl" init-method="init">
+		<property name="userDaoMysqlImpl" ref="userDaoMysqlImpl"></property>
+		<property name="userDaoRedisImpl" ref="userDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="userEquipDao" class="com.lodogame.game.dao.impl.cache.UserEquipDaoCacheImpl" init-method="init">
+		<property name="userEquipDaoMysqlImpl" ref="userEquipDaoMysqlImpl"></property>
+		<property name="userEquipDaoRedisImpl" ref="userEquipDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="userHeroDao" class="com.lodogame.game.dao.impl.cache.UserHeroDaoCacheImpl" init-method="init">
+		<property name="userHeroDaoMysqlImpl" ref="userHeroDaoMysqlImpl"></property>
+		<property name="userHeroDaoRedisImpl" ref="userHeroDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="systemHeroDao" class="com.lodogame.game.dao.impl.cache.SystemHeroDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemEquipDao" class="com.lodogame.game.dao.impl.cache.SystemEquipDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemHeroSkillDao" class="com.lodogame.game.dao.impl.cache.SystemHeroSkillDaoCacheImpl" init-method="init">
+		<property name="systemHeroSkillDaoMysqlImpl" ref="systemHeroSkillDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="tavernRewardDao" class="com.lodogame.game.dao.impl.cache.TavernRewardDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemForcesDao" class="com.lodogame.game.dao.impl.cache.SystemForcesDaoCacheImpl" init-method="init">
+		<property name="systemForcesDaoMysqlImpl" ref="systemForcesDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="systemForcesMonsterDao" class="com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="userTotalGainLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserTotalGainLogDaoMysqlImpl"></bean>
+
+	<bean id="systemUserLevelDao" class="com.lodogame.game.dao.impl.cache.SystemUserLevelDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="runtimeDataDao" class="com.lodogame.game.dao.impl.mysql.RuntimeDataDaoMysqlImpl"></bean>
+
+	<bean id="systemRecivePowerDao" class="com.lodogame.game.dao.impl.cache.SystemRecivePowerDaoCacheImpl" init-method="init">
+		<property name="systemRecivePowerDaoMysqlImpl" ref="systemRecivePowerDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="tavernDropToolDao" class="com.lodogame.game.dao.impl.cache.TavernDropToolDaoCacheImpl" init-method="init">
+		<property name="tavernDropToolDaoMysqlImpl" ref="tavernDropToolDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="systemEquipAttrDao" class="com.lodogame.game.dao.impl.cache.SystemEquipAttrDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="userPkInfoDao" class="com.lodogame.game.dao.impl.cache.UserPkInfoDaoCacheImpl" init-method="init">
+		<property name="userPkInfoDaoMysqlImpl" ref="userPkInfoDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="rankScoreCfgDao" class="com.lodogame.game.dao.impl.cache.RankScoreCfgDaoCacheImpl" init-method="init">
+		<property name="mysqlDaoImpl" ref="rankScoreCfgDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userForcesDao" class="com.lodogame.game.dao.impl.cache.UserForcesDaoCacheImpl">
+		<property name="userForcesDaoMysqlImpl" ref="userForcesDaoMysqlImpl"></property>
+		<property name="userForcesDaoRedisImpl" ref="userForcesDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="pkAwardDao" class="com.lodogame.game.dao.impl.cache.PkAwardDaoCacheImpl" init-method="init">
+		<property name="mysqlDaoImpl" ref="pkAwardDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userDailyGainLogDao" class="com.lodogame.game.dao.impl.cache.UserDailyGainLogDaoCacheImpl" init-method="init">
+		<property name="userDailyGainLogDaoMysqlImpl" ref="userDailyGainLogDaoMysqlImpl"></property>
+		<property name="userDailyGainLogDaoRedisImpl" ref="userDailyGainLogDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="configDataDao" class="com.lodogame.game.dao.impl.cache.ConfigDataDaoCacheImpl" init-method="init">
+		<property name="configDataDaoMysqlImpl" ref="configDataDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="systemEquipUpgradeToolDao" class="com.lodogame.game.dao.impl.cache.SystemEquipUpgradeToolDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemEquipUpgradeDao" class="com.lodogame.game.dao.impl.cache.SystemEquipUpgradeDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemToolDropDao" class="com.lodogame.game.dao.impl.cache.SystemToolDropDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemHeroExchangeDao" class="com.lodogame.game.dao.impl.cache.SystemHeroExchangeDaoCacheImpl" init-method="init">
+		<property name="systemHeroExchangeDaoMysqlImpl" ref="systemHeroExchangeDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="battleDao" class="com.lodogame.game.dao.impl.mysql.BattleDaoMysqlImpl"></bean>
+
+	<!-- 道具掉落dao -->
+	<bean id="forcesDropToolDao" class="com.lodogame.game.dao.impl.cache.ForcesDropToolDaoCacheImpl" init-method="init"></bean>
+
+	<!-- 系统 活动任务Dao -->
+	<bean id="systemActivityTaskDao" class="com.lodogame.game.dao.impl.cache.SystemActivityTaskDaoCacheImpl" init-method="init">
+		<property name="systemActivityTaskDaoMysqlImpl" ref="systemActivityTaskDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 礼包及礼包掉落常量表 -->
+	<bean id="systemGiftbagDao" class="com.lodogame.game.dao.impl.cache.SystemGiftbagDaoCacheImpl" init-method="init">
+		<property name="systemGiftbagDaoMysqlImpl" ref="systemGiftbagDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 充值奖励常量dao -->
+	<bean id="systemGoldSetDao" class="com.lodogame.game.dao.impl.cache.SystemGoldSetDaoCacheImpl" init-method="init">
+		<property name="systemGoldSetDaoMysqlImpl" ref="systemGoldSetDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 英雄升级常量dao -->
+	<bean id="systemHeroUpgradeDao" class="com.lodogame.game.dao.impl.cache.SystemHeroUpgradeDaoCacheImpl" init-method="init"></bean>
+
+	<!-- 英雄升級道具常量dao -->
+	<bean id="systemHeroUpgradeToolDao" class="com.lodogame.game.dao.impl.cache.SystemHeroUpgradeToolDaoCacheImpl" init-method="init">
+		<property name="systemHeroUpgradeToolDaoMysqlImpl" ref="systemHeroUpgradeToolDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 英雄升級經驗常量dao SystemLevelExpDaoCacheImpl -->
+	<bean id="systemLevelExpDao" class="com.lodogame.game.dao.impl.cache.SystemLevelExpDaoCacheImpl" init-method="init">
+		<property name="systemLevelExpDaoMysqlImpl" ref="systemLevelExpDaoMysqlImpl"></property>
+	</bean>
+
+	<!--系統商城常量dao SystemMallDaoCacheImpl -->
+	<bean id="systemMallDao" class="com.lodogame.game.dao.impl.cache.SystemMallDaoCacheImpl" init-method="init"></bean>
+
+	<!--系统商城打折 SystemMallDiscountDaoCacheImpl -->
+	<bean id="systemMallDiscountDao" class="com.lodogame.game.dao.impl.cache.SystemMallDiscountDaoCacheImpl" init-method="init">
+		<property name="systemMallDiscountDaoMysqlImpl" ref="systemMallDiscountDaoMysqlImpl"></property>
+	</bean>
+	<!-- 大關卡常量表 SystemSceneDaoCacheImpl -->
+	<bean id="systemSceneDao" class="com.lodogame.game.dao.impl.cache.SystemSceneDaoCacheImpl" init-method="init">
+
+	</bean>
+	<!-- vip常量表 SystemVipLevelDaoCacheImpl -->
+	<bean id="systemVipLevelDao" class="com.lodogame.game.dao.impl.cache.SystemVipLevelDaoCacheImpl" init-method="init">
+		<property name="systemVipLevelDaoMysqlImpl" ref="systemVipLevelDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 怪物常量表 -->
+	<bean id="systemMonsterDao" class="com.lodogame.game.dao.impl.cache.SystemMonsterDaoCacheImpl" init-method="init"></bean>
+
+	<!-- 道具常量表 -->
+	<bean id="systemToolDao" class="com.lodogame.game.dao.impl.cache.SystemToolDaoCacheImpl" init-method="init"></bean>
+
+	<!-- 用户活跃度信息dao -->
+	<bean id="userActivityTaskDao" class="com.lodogame.game.dao.impl.cache.UserActivityTaskDaoCacheImpl">
+		<property name="userActivityTaskDaoMysqlImpl" ref="userActivityTaskDaoMysqlImpl"></property>
+		<property name="userActivityTaskDaoRedisImpl" ref="userActivityTaskDaoRedisImpl"></property>
+	</bean>
+
+	<!-- 用户扩展信息dao -->
+	<bean id="userExtinfoDao" class="com.lodogame.game.dao.impl.cache.UserExtinfoDaoCacheImpl">
+		<property name="userExtinfoDaoRedisImpl" ref="userExtinfoDaoRedisImpl"></property>
+		<property name="userExtinfoDaoMysqlImpl" ref="userExtinfoDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 用户在线奖励UserOnlineRewardDaoCacheImpl -->
+	<bean id="userOnlineRewardDao" class="com.lodogame.game.dao.impl.cache.UserOnlineRewardDaoCacheImpl">
+		<property name="userOnlineRewardDaoMysqlImpl" ref="userOnlineRewardDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 用户大关卡记录 -->
+	<bean id="userSceneDao" class="com.lodogame.game.dao.impl.cache.UserSceneDaoCacheImpl">
+		<property name="userSceneDaoMysqlImpl" ref="userSceneDaoMysqlImpl"></property>
+		<property name="userSceneDaoRedisImpl" ref="userSceneDaoRedisImpl"></property>
+	</bean>
+
+	<!-- 用户id与平台id之间的映射关系 -->
+	<bean id="userMapperDao" class="com.lodogame.game.dao.impl.cache.UserMapperDaoCacheImpl">
+		<property name="userMapperDaoMysqlImpl" ref="userMapperDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 用户礼包表 -->
+	<bean id="userGiftbagDao" class="com.lodogame.game.dao.impl.cache.UserGiftbagDaoCacheImpl">
+		<property name="userGiftbagDaoMysqlImpl" ref="userGiftbagDaoMysqlImpl"></property>
+		<property name="userGiftbagDaoRedisImpl" ref="userGiftbagDaoRedisImpl"></property>
+	</bean>
+
+	<!-- 用户商城日志缓存 -->
+	<bean id="userMallLogDao" class="com.lodogame.game.dao.impl.cache.UserMallLogDaoCacheImpl">
+		<property name="userMallLogDaoMysqlImpl" ref="userMallLogDaoMysqlImpl"></property>
+		<property name="userMallLogDaoRedisImpl" ref="userMallLogDaoRedisImpl"></property>
+	</bean>
+
+	<!-- 用户抽将信息缓存 -->
+	<bean id="userTavernDao" class="com.lodogame.game.dao.impl.cache.UserTavernDaoCacheImpl">
+		<property name="userTavernDaoRedisImpl" ref="userTavernDaoRedisImpl"></property>
+		<property name="userTavernDaoMysqlImpl" ref="userTavernDaoMysqlImpl"></property>
+	</bean>
+
+	<!-- 用户抽四星将日志 -->
+	<bean id="userTavernLogDao" class="com.lodogame.game.dao.impl.cache.UserTavernLogDaoCacheImpl">
+		<property name="userTavernLogDaoMysqlImpl" ref="userTavernLogDaoMysqlImpl"></property>
+	</bean>
+	<!-- 用户道具缓存 -->
+	<bean id="userToolDao" class="com.lodogame.game.dao.impl.cache.UserToolDaoCacheImpl">
+		<property name="userToolDaoMysqlImpl" ref="userToolDaoMysqlImpl"></property>
+		<property name="userToolDaoRedisImpl" ref="userToolDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="arenaDaoCacheImpl" class="com.lodogame.game.dao.impl.cache.ArenaDaoCacheImpl"></bean>
+
+	<bean id="userPayRewardDao" class="com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImpl">
+		<property name="userPayRewardDaoMysqlImpl" ref="userPayRewardDaoMysqlImpl"></property>
+	</bean>
+	<bean id="systemOncePayRewardDao" class="com.lodogame.game.dao.impl.cache.SystemOncePayRewardDaoCacheImpl">
+		<property name="systemOncePayRewardDaoMysqlImpl" ref="systemOncePayRewardDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="systemMailDao" class="com.lodogame.game.dao.impl.cache.SystemMailDaoCacheImpl" init-method="init">
+		<property name="systemMailDaoMysqlImpl" ref="systemMailDaoMysqlImpl"></property>
+		<property name="systemMailDaoRedisImpl" ref="systemMailDaoRedisImpl"></property>
+	</bean>
+	<bean id="activityDrawDao" class="com.lodogame.game.dao.impl.cache.ActivityDrawDaoCacheImpl" init-method="init">
+		<property name="activityDrawDaoMysqlImpl" ref="activityDrawDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="partnerApkUrlDao" class="com.lodogame.game.dao.impl.cache.PartnerApkUrlDaoCacheImpl">
+		<property name="partnerApkUrlDaoMysqlImpl" ref="partnerApkUrlDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userMallInfoDao" class="com.lodogame.game.dao.impl.cache.UserMallInfoDaoCacheImpl">
+		<property name="userMallInfoDaoMysqlImpl" ref="userMallInfoDaoMysqlImpl"></property>
+		<property name="userMallInfoDaoRedisImpl" ref="userMallInfoDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="logPoolDao" class="com.lodogame.game.dao.impl.cache.LogPoolDaoCacheImpl"></bean>
+
+	<bean id="chatLogDao" class="com.lodogame.game.dao.impl.cache.ChatLogDaoCacheImpl">
+		<property name="chatLogDaoMysqlImpl" ref="chatLogDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="systemHeroUpgradeAddPropDao" class="com.lodogame.game.dao.impl.cache.SystemHeroUpgradeAddPropDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="userStoneDao" class="com.lodogame.game.dao.impl.cache.UserStoneDaoCacheImpl">
+		<property name="userStoneDaoMysqlImpl" ref="userStoneDaoMysqlImpl"></property>
+		<property name="userStoneDaoRedisImpl" ref="userStoneDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="systemStoneDao" class="com.lodogame.game.dao.impl.cache.SystemStoneDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="userArenaRecordLogDao" class="com.lodogame.game.dao.impl.cache.UserArenaRecordLogDaoCacheImpl">
+		<property name="userArenaRecordLogDaoMysqlImpl" ref="userArenaRecordLogDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userEquipStoneDao" class="com.lodogame.game.dao.impl.cache.UserEquipStoneDaoCacheImpl">
+		<property name="userEquipStoneDaoMysqlImpl" ref="userEquipStoneDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userArenaRewardLogDao" class="com.lodogame.game.dao.impl.cache.UserArenaRewardLogDaoCacheImpl">
+		<property name="userArenaRewardLogDaoMysqlImpl" ref="userArenaRewardLogDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userArenaInfoDao" class="com.lodogame.game.dao.impl.cache.UserArenaInfoDaoCacheImpl" init-method="init">
+		<property name="userArenaInfoDaoMysqlImpl" ref="userArenaInfoDaoMysqlImpl"></property>
+		<property name="userArenaInfoDaoRedisImpl" ref="userArenaInfoDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="systemArenaGiftDao" class="com.lodogame.game.dao.impl.cache.SystemArenaGiftDaoCacheImpl">
+		<property name="systemArenaGiftDaoMysqlImpl" ref="systemArenaGiftDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userLoginRewardInfoDao" class="com.lodogame.game.dao.impl.cache.UserLoginRewardDaoCacheImpl">
+		<property name="userLoginRewardDaoMysqlImpl" ref="userLoginRewardDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="systemLoginRewardDao" class="com.lodogame.game.dao.impl.cache.SystemLoginRewardDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemContestRewardDao" class="com.lodogame.game.dao.impl.cache.SystemContestRewardDaoCacheImpl">
+		<property name="systemContestRewardDaoMysqlImpl" ref="systemContestRewardDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userRecContestRewardLogDao" class="com.lodogame.game.dao.impl.cache.UserRecContestRewardLogDaoCacheImpl">
+		<property name="userRecContestRewardLogDaoMysqlImpl" ref="userRecContestRewardLogDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="giftDropDao" class="com.lodogame.game.dao.impl.cache.GiftDropDaoCacheImpl" init-method="init">
+		<property name="giftDropDaoMysqlImpl" ref="giftDropDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userSweepInfoDao" class="com.lodogame.game.dao.impl.cache.UserSweepInfoDaoCacheImpl" init-method="init">
+		<property name="userSweepInfoDaoMysqlImpl" ref="userSweepInfoDaoMysqlImpl"></property>
+		<property name="userSweepInfoDaoRedisImpl" ref="userSweepInfoDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="systemHeroStoneMallDao" class="com.lodogame.game.dao.impl.cache.SystemHeroStoneMallDaoCacheImpl" init-method="init">
+		<property name="systemHeroStoneMallDaoMysqlImpl" ref="systemHeroStoneMallDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userGiftLogDao" class="com.lodogame.game.dao.impl.cache.UserGiftLogDaoCacheImpl">
+		<property name="userGiftLogDaoMysqlImpl" ref="userGiftLogDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="systemBlackRoomConfigDao" class="com.lodogame.game.dao.impl.cache.SystemBlackRoomConfigDaoCacheImpl">
+		<property name="systemBlackRoomConfigDaoMysqlImpl" ref="systemBlackRoomConfigDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userBlackRoomLogDao" class="com.lodogame.game.dao.impl.cache.UserBlackRoomLogDaoCacheImpl">
+		<property name="userBlackRoomLogDaoCacheImpl" ref="userBlackRoomLogDaoCacheImpl"></property>
+	</bean>
+
+	<bean id="systemEquipSellToolDao" class="com.lodogame.game.dao.impl.cache.SystemEquipSellToolDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="userFriendRequestDao" class="com.lodogame.game.dao.impl.cache.UserFriendRequestDaoCacheImpl">
+		<property name="userFriendRequestDaoMysqlImpl" ref="userFriendRequestDaoMysqlImpl"></property>
+		<property name="userFriendRequestDaoRedisImpl" ref="userFriendRequestDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="friendDao" class="com.lodogame.game.dao.impl.cache.FriendDaoCacheImpl">
+		<property name="friendDaoMysqlImpl" ref="friendDaoMysqlImpl"></property>
+		<property name="friendDaoRedisImpl" ref="friendDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="systemFragmentDao" class="com.lodogame.game.dao.impl.cache.SystemFragmentDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemTaskDao" class="com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImpl"></bean>
+
+	<bean id="userTaskDao" class="com.lodogame.game.dao.impl.cache.UserTaskDaoCacheImpl">
+		<property name="userTaskDaoRedisImpl" ref="userTaskDaoRedisImpl"></property>
+		<property name="userTaskDaoMysqlImpl" ref="userTaskDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userPraiseDao" class="com.lodogame.game.dao.impl.cache.UserPraiseDaoCacheImpl">
+		<property name="userPraiseDaoMysqlImpl" ref="userPraiseDaoMysqlImpl"></property>
+		<property name="userPraiseDaoRedisImpl" ref="userPraiseDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="systemLoginReward7Dao" class="com.lodogame.game.dao.impl.cache.SystemLoginReward7DaoCachelmpl">
+
+	</bean>
+
+	<bean id="userLoginLogDao" class="com.lodogame.game.dao.impl.cache.UserLoginLogDaoCacheImpl">
+		<property name="userLoginLogDaoMysqlImpl" ref="userLoginLogDaoMysqlImpl"></property>
+		<property name="userLoginLogDaoRedisImpl" ref="userLoginLogDaoRedisImpl"></property>
+	</bean>
+
+	<bean id="systemOncePayRewardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemOncePayRewardDaoMysqlImpl"></bean>
+
+	<bean id="systemTotalPayRewardDao" class="com.lodogame.game.dao.impl.mysql.SystemTotalPayRewardDaoMysqlImpl"></bean>
+
+	<bean id="toolExchangeDao" class="com.lodogame.game.dao.impl.mysql.ToolExchangeDaoMysqlImpl"></bean>
+
+	<bean id="gemAltarDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.GemAltarDaoMySqlImpl"></bean>
+
+	<bean id="userDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl"></bean>
+
+	<bean id="userHeroDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserHeroDaoMysqlImpl"></bean>
+
+	<bean id="userPkInfoDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImpl"></bean>
+
+	<bean id="userEquipDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserEquipDaoMysqlImpl"></bean>
+
+	<bean id="systemHeroSkillDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemHeroSkillDaoMysqlImpl"></bean>
+
+	<bean id="userSceneDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserSceneDaoMysqlImpl"></bean>
+
+	<bean id="userForcesDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserForcesDaoMysqlImpl"></bean>
+
+	<bean id="userToolDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImpl"></bean>
+
+	<bean id="logDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.LogDaoMysqlImpl"></bean>
+
+	<bean id="userTavernDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserTavernDaoMysqlImpl"></bean>
+
+	<bean id="userMapperDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImpl"></bean>
+
+	<bean id="userExtinfoDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImpl"></bean>
+
+	<bean id="userDailyGainLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImpl"></bean>
+
+	<bean id="userMallLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserMallLogDaoMysqlImpl"></bean>
+
+	<bean id="userGiftbagDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImpl"></bean>
+
+	<bean id="paymentLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImpl"></bean>
+
+	<bean id="giftCodeDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.GiftCodeDaoMysqlImpl">
+		<property name="jdbcCommon" ref="jdbcCommon"></property>
+	</bean>
+
+	<bean id="userOnlineRewardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserOnlineRewardDaoMysqlImpl"></bean>
+
+	<bean id="userActivityTaskDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserActivityTaskDaoMysqlImpl"></bean>
+
+	<bean id="userMallInfoDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserMallInfoDaoMysqlImpl"></bean>
+
+
+	<!-- user dao end -->
+
+	<bean id="systemLevelExpDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemLevelExpDaoMysqlImpl"></bean>
+
+	<bean id="userTavernLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserTavernLogDaoMysqlImpl"></bean>
+
+	<bean id="systemHeroUpgradeToolDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemHeroUpgradeToolDaoMysqlImpl"></bean>
+
+	<bean id="tavernDropToolDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.TavernDropToolDaoMysqlImpl"></bean>
+
+	<bean id="systemForcesDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImpl"></bean>
+
+	<bean id="systemUserLevelDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemUserLevelDaoMysqlImpl"></bean>
+
+	<bean id="userOnlineLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImpl"></bean>
+
+	<bean id="systemGoldSetDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImpl"></bean>
+
+	<bean id="configDataDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.ConfigDataDaoMysqlImpl"></bean>
+
+	<bean id="systemActivityDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemActivityDaoMysqlImpl">
+		<property name="jdbcCommon" ref="jdbcCommon"></property>
+	</bean>
+
+	<bean id="pkAwardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.PkAwardDaoMysqlImpl"></bean>
+
+	<bean id="rankScoreCfgDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.RankScoreCfgDaoMysqlImpl"></bean>
+
+	<bean id="systemRecivePowerDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemRecivePowerDaoMysqlImpl"></bean>
+
+	<bean id="rankLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.RankLogDaoMysqlImpl"></bean>
+
+	<bean id="systemHeroExchangeDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemHeroExchangeDaoMysqlImpl"></bean>
+
+	<bean id="systemMallDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemMallDaoMysqlImpl"></bean>
+
+	<bean id="systemMallDiscountDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemMallDiscountDaoMysqlImpl"></bean>
+
+	<bean id="systemGiftbagDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemGiftbagDaoMysqlImpl"></bean>
+
+	<bean id="systemVipLevelDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImpl"></bean>
+
+	<bean id="systemActivityTaskDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemActivityTaskDaoMysqlImpl"></bean>
+
+	<bean id="unSynDao" class="com.lodogame.game.dao.impl.mysql.UnSynDaoMysqlImpl"></bean>
+
+	<bean id="systemPassiveSkillDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemPassiveSkillDaoMysqlImpl"></bean>
+
+	<bean id="userPayRewardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserPayRewardDaoMysqlImpl"></bean>
+
+	<bean id="userMailDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserMailDaoMysqlImpl"></bean>
+
+	<bean id="systemMailDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemMailDaoMysqlImpl"></bean>
+
+	<bean id="activityDrawDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.ActivityDrawDaoMysqlImpl"></bean>
+
+	<bean id="partnerApkUrlDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.PartnerApkUrlDaoMysqlImpl"></bean>
+
+	<bean id="systemTotalDayPayRewardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemTotalDayPayRewardDaoMysqlImpl"></bean>
+
+	<bean id="systemOnlineRewardDao" class="com.lodogame.game.dao.impl.mysql.SystemOnlineRewardDaoMysqlImpl"></bean>
+
+	<bean id="chatLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.ChatLogDaoMysqlImpl"></bean>
+
+	<bean id="userStoneDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserStoneDaoMysqlImpl"></bean>
+
+	<bean id="userArenaRecordLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserArenaRecordLogDaoMysqlImpl"></bean>
+
+	<bean id="userEquipStoneDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserEquipStoneDaoMysqlImpl"></bean>
+
+	<bean id="userArenaRewardLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserArenaRewardLogDaoMysqlImpl"></bean>
+
+	<bean id="userArenaInfoDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserArenaInfoDaoMysqlImpl"></bean>
+
+	<bean id="systemArenaGiftDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemArenaGiftDaoMysqlImpl"></bean>
+
+	<bean id="systemLoginRewardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemLoginRewardDaoMysqlImpl"></bean>
+
+	<bean id="userLoginRewardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserLoginRewardDaoMysqlImpl"></bean>
+
+	<bean id="systemContestRewardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemContestRewardDaoMysqlImpl"></bean>
+
+	<bean id="userRecContestRewardLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserRecContestRewardLogDaoMysqlImpl"></bean>
+
+	<bean id="systemHeroStoneMallDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemHeroStoneMallDaoMysqlImpl"></bean>
+
+	<bean id="giftDropDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.GiftDropDaoMysqlImpl">
+		<property name="jdbcCommon" ref="jdbcCommon"></property>
+	</bean>
+
+	<bean id="userSweepInfoDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserSweepInfoDaoMysqlImpl"></bean>
+
+	<bean id="userGiftLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserGiftLogDaoMysqlImpl"></bean>
+
+	<bean id="systemBlackRoomConfigDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemBlackRoomConfigDaoMysqlImpl"></bean>
+
+	<bean id="userBlackRoomLogDaoCacheImpl" class="com.lodogame.game.dao.impl.mysql.UserBlackRoomLogDaoMysqlImpl"></bean>
+
+	<bean id='userFriendRequestDaoMysqlImpl' class="com.lodogame.game.dao.impl.mysql.UserFriendRequestDaoMysqlImpl"></bean>
+
+	<bean id="friendDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.FriendDaoMysqlImpl"></bean>
+
+	<bean id="contestDao" class="com.lodogame.game.dao.impl.mysql.ContestDaoMysqlImpl"></bean>
+
+	<bean id="rankDao" class="com.lodogame.game.dao.impl.mysql.RankDaoMysqlImpl"></bean>
+
+	<bean id="userPersonalMailDao" class="com.lodogame.game.dao.impl.mysql.UserPersonalMailDaoMysqlImpl"></bean>
+
+	<bean id='userTaskDaoMysqlImpl' class="com.lodogame.game.dao.impl.mysql.UserTaskDaoMysqlImpl"></bean>
+
+	<bean id="userPraiseDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserPraiseDaoMysqlImpl"></bean>
+
+	<bean id="systemLoginReward7DaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.SystemLoginReward7DaoMysqlImpl"></bean>
+
+	<bean id="userLoginLogDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserLoginLogDaoMysqlImpl"></bean>
+
+	<bean id="userDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserDaoRedisImpl"></bean>
+
+	<bean id="userEquipDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserEquipDaoRedisImpl"></bean>
+
+	<bean id="userForcesDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserForcesDaoRedisImpl"></bean>
+
+	<bean id="userHeroDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserHeroDaoRedisImpl"></bean>
+
+	<bean id="systemMailDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.SystemMailDaoRedisImpl"></bean>
+
+	<bean id="commandDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.CommandDaoRedisImpl"></bean>
+
+	<!-- 用户扩展信息缓存 -->
+	<bean id="userExtinfoDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserExtinfoDaoRedisImpl"></bean>
+	<!-- 用户活跃度信息缓存 -->
+	<bean id="userActivityTaskDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserActivityTaskDaoRedisImpl"></bean>
+	<!-- 用户大关卡缓存 -->
+	<bean id="userSceneDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserSceneDaoRedisImpl"></bean>
+
+	<!-- 用户礼包表 -->
+	<bean id="userGiftbagDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserGiftbagDaoRedisImpl"></bean>
+	<!-- 异步运营日志队列 -->
+	<bean id="logOperatorDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.LogOperatorDaoRedisImpl"></bean>
+	<!-- 用户商城日志缓存 -->
+	<bean id="userMallLogDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserMallLogDaoRedisImpl"></bean>
+	<!-- 用户抽将信息缓存 -->
+	<bean id="userTavernDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserTavernDaoRedisImpl"></bean>
+	<!-- 用户道具缓存 -->
+	<bean id="userToolDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserToolDaoRedisImpl"></bean>
+	<!-- 用户每日获得道具数量缓存 -->
+	<bean id="userDailyGainLogDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserDailyGainLogDaoRedisImpl"></bean>
+
+	<bean id="userMallInfoDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserMallInfoDaoRedisImpl"></bean>
+
+	<bean id="userArenaInfoDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserArenaInfoDaoRedisImpl"></bean>
+
+	<bean id="userSweepInfoDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserSweepInfoDaoRedisImpl"></bean>
+
+	<bean id="userStoneDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserStoneDaoRedisImpl"></bean>
+
+	<bean id="userFriendRequestDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserFriendRequestDaoRedisImpl"></bean>
+	<bean id="friendDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.FriendDaoRedisImpl"></bean>
+
+	<bean id="userTaskDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserTaskDaoRedisImpl"></bean>
+
+	<bean id="userPraiseDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserPraiseDaoRedisImpl"></bean>
+	<bean id="userLoginLogDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserLoginLogDaoRedisImpl"></bean>
+
+	<bean id="userMonthlyCardDao" class="com.lodogame.game.dao.impl.cache.UserMonthlyCardDaoCacheImpl">
+		<property name="userMonthlyCardDaoRedisImpl" ref="userMonthlyCardDaoRedisImpl"></property>
+		<property name="userMonthlyCardDaoMysqlImpl" ref="userMonthlyCardDaoMysqlImpl"></property>
+	</bean>
+
+	<bean id="userMonthlyCardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserMonthlyCardDaoMysqlImpl"></bean>
+
+	<bean id="userMonthlyCardDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserMonthlyCardDaoRedisImpl"></bean>
+
+	<bean id="userDailyTaskDao" class="com.lodogame.game.dao.impl.cache.UserDailyTaskDaoCacheImpl" init-method="init">
+		<property name="userDailyTaskDaoMysqlImpl" ref="userDailyTaskDaoMysqlImpl"></property>
+	</bean>
+	<bean id="userDailyTaskDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserDailyTaskDaoMysqlImpl"></bean>
+
+	<bean id="systemDailyTaskDao" class="com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemEquipRefineDao" class="com.lodogame.game.dao.impl.cache.SystemEquipRefineDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemRobotUserDao" class="com.lodogame.game.dao.impl.cache.SystemRobotUserDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemRobotHeroDao" class="com.lodogame.game.dao.impl.cache.SystemRobotHeroDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemRobotRuleDao" class="com.lodogame.game.dao.impl.cache.SystemRobotRuleDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="robotDao" class="com.lodogame.game.dao.impl.mysql.RobotDaoMysqlImpl"></bean>
+
+	<bean id="exDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.ExDaoMysqlImpl"></bean>
+
+	<bean id="systemPriceDao" class="com.lodogame.game.dao.impl.cache.SystemPriceDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="userVersusLogDao" class="com.lodogame.game.dao.impl.mysql.UserVersusLogDaoMysqlImpl"></bean>
+
+	<bean id="systemBadwordDao" class="com.lodogame.game.dao.impl.cache.SystemBadwordDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="upStarValueConfigDao" class="com.lodogame.game.dao.impl.cache.UpStarValueConfigDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="upStarHeroConfigDao" class="com.lodogame.game.dao.impl.cache.UpStarHeroConfigDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="upStarBreakConfigDao" class="com.lodogame.game.dao.impl.cache.UpStarBreakConfigDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="equipRefineDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.EquipRefineDaoMysqlImpl"></bean>
+
+	<bean id="equipRefineSoulDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.EquipRefineSoulDaoMysqlImpl"></bean>
+
+	<bean id="systemRefineSoulMapDao" class="com.lodogame.game.dao.impl.cache.SystemRefineSoulMapDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="systemRefineSoulDataDao" class="com.lodogame.game.dao.impl.cache.SystemRefineSoulDataDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="meridianConfigDao" class="com.lodogame.game.dao.impl.cache.MeridianConfigDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="meridianNodeConfigDao" class="com.lodogame.game.dao.impl.cache.MeridianNodeConfigDaoCacheImpl" init-method="init"></bean>
+
+	<bean id="userOnlyOneHeroDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserOnlyOneHeroDaoMysqlImpl"></bean>
+	<bean id="skillDataDao" class="com.lodogame.game.dao.impl.cache.SkillDataDaoCacheImpl" init-method="init"> </bean>
+	
+	<bean id="equipEnchantDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.EquipEnchantDaoMysqlImpl"></bean>
+	<bean id="enchantPropertyDao" class="com.lodogame.game.dao.impl.cache.EnchantPropertyDaoCacheImpl" init-method="init"> </bean>
+	<bean id="userCostRewardDaoMysqlImpl" class="com.lodogame.game.dao.impl.mysql.UserCostRewardDaoMysqlImpl"></bean>
+	
+	<bean id="systemCostRewardDao" class="com.lodogame.game.dao.impl.cache.SystemCostRewardDaoCacheImpl"></bean>
+	<bean id="tavernGroupRateDao" class="com.lodogame.game.dao.impl.cache.TavernGroupRateDaoCacheImpl" init-method="init"></bean>
+</beans>

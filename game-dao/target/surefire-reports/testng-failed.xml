@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="getLast"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="getBuyMoney"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="getByPartnerUserId"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testGetUserHeroInfo"/>
+          <include name="testAddUserHero"/>
+          <include name="testGetCount"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testDelete"/>
+          <include name="testGetUseHeroList"/>
+        </methods>
+      </class> <!-- com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="addOrUpdateUserGiftbag"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="testAdd"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="backUserPkInfo"/>
+          <include name="add"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="getByRank"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="getForcesMonsterList"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest -->
+      <class name="com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="getTaskList"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="getUserDailyGain"/>
+          <include name="addUserDailyGain"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="get"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="getTaskList"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest">
+        <methods>
+          <include name="isLogin"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="add"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="getUserOnline"/>
+          <include name="getUserOnlineTest"/>
+          <include name="getLastOnlineTest"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testGetUserEquip"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testAddUserEquip"/>
+          <include name="testUpdateEquipLevel"/>
+        </methods>
+      </class> <!-- com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testGetUserSceneList"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest">
+        <methods>
+          <include name="testGet"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="addPower"/>
+          <include name="testAdd"/>
+        </methods>
+      </class> <!-- com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest">
+        <methods>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="getSceneForcesList"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest">
+        <methods>
+          <include name="getUserCurrentForces"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="testGetUserForcesList"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest">
+        <methods>
+          <include name="getReceivedOrderIdList"/>
+          <include name="add"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="init"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="getList"/>
+        </methods>
+      </class> <!-- com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

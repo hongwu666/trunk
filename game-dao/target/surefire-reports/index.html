@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">41 methods, 1 failed,  36 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest" hash-for-method="getLast">getLast</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods skipped suite-Command_line_suite"> (hide)</a> <!-- hide-methods skipped suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods skipped suite-Command_line_suite"> (show)</a> <!-- show-methods skipped suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest" hash-for-method="add">add</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest" hash-for-method="addOrUpdateUserGiftbag">addOrUpdateUserGiftbag</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest" hash-for-method="addPower">addPower</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest" hash-for-method="addUserDailyGain">addUserDailyGain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest" hash-for-method="backUserPkInfo">backUserPkInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest" hash-for-method="get">get</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest" hash-for-method="getBuyMoney">getBuyMoney</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest" hash-for-method="getByPartnerUserId">getByPartnerUserId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest" hash-for-method="getByRank">getByRank</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest" hash-for-method="getForcesMonsterList">getForcesMonsterList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest" hash-for-method="getLastOnlineTest">getLastOnlineTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest" hash-for-method="getList">getList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest" hash-for-method="getReceivedOrderIdList">getReceivedOrderIdList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest" hash-for-method="getSceneForcesList">getSceneForcesList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest" hash-for-method="getTaskList">getTaskList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest" hash-for-method="getTaskList">getTaskList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest" hash-for-method="getUserCurrentForces">getUserCurrentForces</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest" hash-for-method="getUserDailyGain">getUserDailyGain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest" hash-for-method="getUserOnline">getUserOnline</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest" hash-for-method="getUserOnlineTest">getUserOnlineTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest" hash-for-method="isLogin">isLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest" hash-for-method="testAdd">testAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest" hash-for-method="testAdd">testAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest" hash-for-method="testAddUserEquip">testAddUserEquip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest" hash-for-method="testAddUserHero">testAddUserHero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest" hash-for-method="testDelete">testDelete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest" hash-for-method="testGet">testGet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest" hash-for-method="testGetCount">testGetCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest" hash-for-method="testGetUseHeroList">testGetUseHeroList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest" hash-for-method="testGetUserEquip">testGetUserEquip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest" hash-for-method="testGetUserForcesList">testGetUserForcesList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest" hash-for-method="testGetUserHeroInfo">testGetUserHeroInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest" hash-for-method="testGetUserSceneList">testGetUserSceneList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest" hash-for-method="testUpdateEquipLevel">testUpdateEquipLevel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest" hash-for-method="getList">getList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest" hash-for-method="getPaymenList">getPaymenList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.TavernDropToolDaoTest" hash-for-method="getTavernDropToolList">getTavernDropToolList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest" hash-for-method="reduceUserTool">reduceUserTool</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLast">
+                  </a> <!-- getLast -->
+                  <span class="method-name">getLast</span>
+                  <div class="stack-trace"><b>"org.testng.TestNGException: 
+Method getLast requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 24 stack frames<br/> org.testng.TestNGException: 
+Method getLast requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:370)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+"</b><br>org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)<br>org.testng.internal.Parameters.createParameters(Parameters.java:134)<br>org.testng.internal.Parameters.createParameters(Parameters.java:370)<br>org.testng.internal.Parameters.handleParameters(Parameters.java:447)<br>org.testng.internal.Invoker.handleParameters(Invoker.java:1383)<br>org.testng.internal.Invoker.createParameters(Invoker.java:1075)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:606)<br>org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)<br>org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)<br>org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBuyMoney">
+                  </a> <!-- getBuyMoney -->
+                  <span class="method-name">getBuyMoney</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddUserHero">
+                  </a> <!-- testAddUserHero -->
+                  <span class="method-name">testAddUserHero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDelete">
+                  </a> <!-- testDelete -->
+                  <span class="method-name">testDelete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCount">
+                  </a> <!-- testGetCount -->
+                  <span class="method-name">testGetCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUseHeroList">
+                  </a> <!-- testGetUseHeroList -->
+                  <span class="method-name">testGetUseHeroList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserHeroInfo">
+                  </a> <!-- testGetUserHeroInfo -->
+                  <span class="method-name">testGetUserHeroInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getByPartnerUserId">
+                  </a> <!-- getByPartnerUserId -->
+                  <span class="method-name">getByPartnerUserId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addOrUpdateUserGiftbag">
+                  </a> <!-- addOrUpdateUserGiftbag -->
+                  <span class="method-name">addOrUpdateUserGiftbag</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdd">
+                  </a> <!-- testAdd -->
+                  <span class="method-name">testAdd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="backUserPkInfo">
+                  </a> <!-- backUserPkInfo -->
+                  <span class="method-name">backUserPkInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getByRank">
+                  </a> <!-- getByRank -->
+                  <span class="method-name">getByRank</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getForcesMonsterList">
+                  </a> <!-- getForcesMonsterList -->
+                  <span class="method-name">getForcesMonsterList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUserDailyGain">
+                  </a> <!-- addUserDailyGain -->
+                  <span class="method-name">addUserDailyGain</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserDailyGain">
+                  </a> <!-- getUserDailyGain -->
+                  <span class="method-name">getUserDailyGain</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTaskList">
+                  </a> <!-- getTaskList -->
+                  <span class="method-name">getTaskList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="get">
+                  </a> <!-- get -->
+                  <span class="method-name">get</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTaskList">
+                  </a> <!-- getTaskList -->
+                  <span class="method-name">getTaskList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLastOnlineTest">
+                  </a> <!-- getLastOnlineTest -->
+                  <span class="method-name">getLastOnlineTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserOnline">
+                  </a> <!-- getUserOnline -->
+                  <span class="method-name">getUserOnline</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserOnlineTest">
+                  </a> <!-- getUserOnlineTest -->
+                  <span class="method-name">getUserOnlineTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isLogin">
+                  </a> <!-- isLogin -->
+                  <span class="method-name">isLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddUserEquip">
+                  </a> <!-- testAddUserEquip -->
+                  <span class="method-name">testAddUserEquip</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserEquip">
+                  </a> <!-- testGetUserEquip -->
+                  <span class="method-name">testGetUserEquip</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateEquipLevel">
+                  </a> <!-- testUpdateEquipLevel -->
+                  <span class="method-name">testUpdateEquipLevel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserSceneList">
+                  </a> <!-- testGetUserSceneList -->
+                  <span class="method-name">testGetUserSceneList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPower">
+                  </a> <!-- addPower -->
+                  <span class="method-name">addPower</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdd">
+                  </a> <!-- testAdd -->
+                  <span class="method-name">testAdd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGet">
+                  </a> <!-- testGet -->
+                  <span class="method-name">testGet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSceneForcesList">
+                  </a> <!-- getSceneForcesList -->
+                  <span class="method-name">getSceneForcesList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUserCurrentForces">
+                  </a> <!-- getUserCurrentForces -->
+                  <span class="method-name">getUserCurrentForces</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserForcesList">
+                  </a> <!-- testGetUserForcesList -->
+                  <span class="method-name">testGetUserForcesList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="add">
+                  </a> <!-- add -->
+                  <span class="method-name">add</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getList">
+                  </a> <!-- getList -->
+                  <span class="method-name">getList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getReceivedOrderIdList">
+                  </a> <!-- getReceivedOrderIdList -->
+                  <span class="method-name">getReceivedOrderIdList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-skipped -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="reduceUserTool">
+                  </a> <!-- reduceUserTool -->
+                  <span class="method-name">reduceUserTool</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.lodogame.game.dao.TavernDropToolDaoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTavernDropToolList">
+                  </a> <!-- getTavernDropToolList -->
+                  <span class="method-name">getTavernDropToolList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPaymenList">
+                  </a> <!-- getPaymenList -->
+                  <span class="method-name">getPaymenList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getList">
+                  </a> <!-- getList -->
+                  <span class="method-name">getList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.RegenerateDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest&quot;/&gt;
+      &lt;class name=&quot;com.lodogame.game.dao.TavernDropToolDaoTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (24 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(41);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testGetUseHeroList')
+data.setCell(0, 2, 'com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest')
+data.setCell(0, 3, 9);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'getByPartnerUserId')
+data.setCell(1, 2, 'com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGetUserHeroInfo')
+data.setCell(2, 2, 'com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testGet')
+data.setCell(3, 2, 'com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getUserDailyGain')
+data.setCell(4, 2, 'com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getUserOnline')
+data.setCell(5, 2, 'com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAdd')
+data.setCell(6, 2, 'com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getUserOnlineTest')
+data.setCell(7, 2, 'com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testUpdateEquipLevel')
+data.setCell(8, 2, 'com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addUserDailyGain')
+data.setCell(9, 2, 'com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'getList')
+data.setCell(10, 2, 'com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'getTavernDropToolList')
+data.setCell(11, 2, 'com.lodogame.game.dao.TavernDropToolDaoTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getList')
+data.setCell(12, 2, 'com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'getPaymenList')
+data.setCell(13, 2, 'com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'reduceUserTool')
+data.setCell(14, 2, 'com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getLast')
+data.setCell(15, 2, 'com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testAddUserHero')
+data.setCell(16, 2, 'com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'getBuyMoney')
+data.setCell(17, 2, 'com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testGetUserForcesList')
+data.setCell(18, 2, 'com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testAddUserEquip')
+data.setCell(19, 2, 'com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'getTaskList')
+data.setCell(20, 2, 'com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testGetUserSceneList')
+data.setCell(21, 2, 'com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testGetCount')
+data.setCell(22, 2, 'com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'add')
+data.setCell(23, 2, 'com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'getTaskList')
+data.setCell(24, 2, 'com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'getReceivedOrderIdList')
+data.setCell(25, 2, 'com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'add')
+data.setCell(26, 2, 'com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'getUserCurrentForces')
+data.setCell(27, 2, 'com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'get')
+data.setCell(28, 2, 'com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testDelete')
+data.setCell(29, 2, 'com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'getByRank')
+data.setCell(30, 2, 'com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'backUserPkInfo')
+data.setCell(31, 2, 'com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'addPower')
+data.setCell(32, 2, 'com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'add')
+data.setCell(33, 2, 'com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'getLastOnlineTest')
+data.setCell(34, 2, 'com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testGetUserEquip')
+data.setCell(35, 2, 'com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testAdd')
+data.setCell(36, 2, 'com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'getForcesMonsterList')
+data.setCell(37, 2, 'com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'getSceneForcesList')
+data.setCell(38, 2, 'com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'isLogin')
+data.setCell(39, 2, 'com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'addOrUpdateUserGiftbag')
+data.setCell(40, 2, 'com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest')
+data.setCell(40, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 19 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAdd</span>
+                <span class="method-start">2940 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest.testAdd())</span>
+                <span class="method-start">2941 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2953 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2955 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getPaymenList</span>
+                <span class="method-start">2956 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getTaskList</span>
+                <span class="method-start">2957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest.getTaskList())</span>
+                <span class="method-start">2957 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2958 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getSceneForcesList</span>
+                <span class="method-start">2959 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest.getSceneForcesList())</span>
+                <span class="method-start">2959 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2960 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getForcesMonsterList</span>
+                <span class="method-start">2961 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2961 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest.getForcesMonsterLis...)</span>
+                <span class="method-start">2961 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getList</span>
+                <span class="method-start">2962 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getTaskList</span>
+                <span class="method-start">2963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest.getTaskList())</span>
+                <span class="method-start">2963 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2964 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getBuyMoney</span>
+                <span class="method-start">2968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest.getBuyMoney())</span>
+                <span class="method-start">2968 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2969 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addUserDailyGain</span>
+                <span class="method-start">2970 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.TavernDropToolDaoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getTavernDropToolList</span>
+                <span class="method-start">2970 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.addUserDailyGain())</span>
+                <span class="method-start">2971 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getUserDailyGain</span>
+                <span class="method-start">2972 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2973 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.getUserDailyGain())</span>
+                <span class="method-start">2973 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addPower</span>
+                <span class="method-start">2974 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.addPower())</span>
+                <span class="method-start">2974 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.testAdd())</span>
+                <span class="method-start">2975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testAdd</span>
+                <span class="method-start">2975 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGet</span>
+                <span class="method-start">2975 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.testGet())</span>
+                <span class="method-start">2976 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2977 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testAddUserEquip())</span>
+                <span class="method-start">2978 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testAddUserEquip</span>
+                <span class="method-start">2978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testGetUserEquip())</span>
+                <span class="method-start">2979 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetUserEquip</span>
+                <span class="method-start">2979 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateEquipLevel</span>
+                <span class="method-start">2979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2980 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testUpdateEquipLevel())</span>
+                <span class="method-start">2980 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">get</span>
+                <span class="method-start">2981 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest.get())</span>
+                <span class="method-start">2981 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2982 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getUserCurrentForces</span>
+                <span class="method-start">2983 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.getUserCurrentForces())</span>
+                <span class="method-start">2983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2985 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.testGetUserForcesList())</span>
+                <span class="method-start">2985 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetUserForcesList</span>
+                <span class="method-start">2985 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addOrUpdateUserGiftbag</span>
+                <span class="method-start">2987 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">2987 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest.addOrUpdateUserGiftbag())</span>
+                <span class="method-start">2987 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testAddUserHero())</span>
+                <span class="method-start">2988 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testAddUserHero</span>
+                <span class="method-start">2988 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testDelete())</span>
+                <span class="method-start">2989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDelete</span>
+                <span class="method-start">2989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetCount())</span>
+                <span class="method-start">2990 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetCount</span>
+                <span class="method-start">2990 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUseHeroList</span>
+                <span class="method-start">2991 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetUseHeroList())</span>
+                <span class="method-start">3001 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetUserHeroInfo</span>
+                <span class="method-start">3004 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetUserHeroInfo())</span>
+                <span class="method-start">3005 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3007 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getByPartnerUserId</span>
+                <span class="method-start">3017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest.getByPartnerUserId())</span>
+                <span class="method-start">3018 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3019 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">3023 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.add())</span>
+                <span class="method-start">3025 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getLastOnlineTest</span>
+                <span class="method-start">3027 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getLastOnlineTest())</span>
+                <span class="method-start">3028 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getUserOnline</span>
+                <span class="method-start">3038 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUserOnlineTest</span>
+                <span class="method-start">3039 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getUserOnline())</span>
+                <span class="method-start">3039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">isLogin</span>
+                <span class="method-start">3040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getUserOnlineTest())</span>
+                <span class="method-start">3040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.isLogin())</span>
+                <span class="method-start">3040 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3041 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">3055 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.add())</span>
+                <span class="method-start">3055 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getList</span>
+                <span class="method-start">3056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getReceivedOrderIdList</span>
+                <span class="method-start">3057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.getList())</span>
+                <span class="method-start">3057 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.getReceivedOrderIdList())</span>
+                <span class="method-start">3057 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3059 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">add</span>
+                <span class="method-start">3060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.add())</span>
+                <span class="method-start">3060 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">backUserPkInfo</span>
+                <span class="method-start">3061 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getByRank</span>
+                <span class="method-start">3061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.backUserPkInfo())</span>
+                <span class="method-start">3061 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.getByRank())</span>
+                <span class="method-start">3061 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3072 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest.testGetUserSceneList())</span>
+                <span class="method-start">3073 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetUserSceneList</span>
+                <span class="method-start">3073 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">reduceUserTool</span>
+                <span class="method-start">3074 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">3074 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

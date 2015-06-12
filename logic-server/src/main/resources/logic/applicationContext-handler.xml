@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="pushHandler" class="com.lodogame.ldsg.handler.PushHandlerImpl"></bean>
+
+	<bean id="userCommandHandler" class="com.lodogame.ldsg.handler.impl.UserCommandHandlerImpl" init-method="init"></bean>
+
+	<bean id="sysCommandHandler" class="com.lodogame.ldsg.handler.impl.SysCommandHandlerImpl" init-method="init"></bean>
+
+	<bean id="onlyOneCommandHandler" class="com.lodogame.ldsg.handler.impl.OnlyOneCommandHandlerImpl" init-method="init"></bean>
+
+	<bean id="loginEventHandle" class="com.lodogame.ldsg.handler.event.LoginEventHandle" init-method="init"></bean>
+
+	<bean id="tavernDrawEventHandle" class="com.lodogame.ldsg.handler.event.TavernDrawEventHandle" init-method="init"></bean>
+
+	<bean id="dropHeroEventHandle" class="com.lodogame.ldsg.handler.event.DropHeroEventHandle" init-method="init"></bean>
+
+	<bean id="vipLevelEventHandle" class="com.lodogame.ldsg.handler.event.VipLevelEventHandle" init-method="init"></bean>
+
+	<bean id="heroUpgradeEventHandle" class="com.lodogame.ldsg.handler.event.HeroUpgradeEventHandle" init-method="init"></bean>
+
+	<bean id="dailyTaskUpdateEventHandle" class="com.lodogame.ldsg.handler.event.DailyTaskUpdateEventHandle" init-method="init"></bean>
+
+	<bean id="equipUpgradeEventHandle" class="com.lodogame.ldsg.handler.event.EquipUpgradeEventHandle" init-method="init"></bean>
+
+	<bean id="stoneUpgradeEventHandle" class="com.lodogame.ldsg.handler.event.StoneUpgradeEventHandle" init-method="init"></bean>
+
+	<bean id="heroPowerUpdateEventHandle" class="com.lodogame.ldsg.handler.event.HeroPowerUpdateEventHandle" init-method="init"></bean>
+
+	<bean id="userPowerUpdateEventHandle" class="com.lodogame.ldsg.handler.event.UserPowerUpdateEventHandle" init-method="init"></bean>
+
+	<bean id="heroAdvanceEventHandle" class="com.lodogame.ldsg.handler.event.HeroAdvanceEventHandle" init-method="init"></bean>
+
+	<bean id="arenaEventHandle" class="com.lodogame.ldsg.handler.event.ArenaEventHandle" init-method="init"></bean>
+
+	<bean id="forcesEventHandle" class="com.lodogame.ldsg.handler.event.ForcesEventHandle" init-method="init"></bean>
+
+	<bean id="paymentEventHandle" class="com.lodogame.ldsg.handler.event.PaymentEventHandle" init-method="init"></bean>
+
+	<bean id="userLevelUpEventhandle" class="com.lodogame.ldsg.handler.event.UserLevelUpEventHandle" init-method="init"></bean>
+
+	<bean id="pkFightEventHandle" class="com.lodogame.ldsg.handler.event.PkFightEventHandle" init-method="init"></bean>
+
+	<bean id="logoutEventHandle" class="com.lodogame.ldsg.handler.event.LogoutEventHandle" init-method="init"></bean>
+
+	<bean id="heroLogHandle" class="com.lodogame.ldsg.handler.log.HeroLogHandlerImpl" init-method="init"></bean>
+
+	<bean id="toolLogHandle" class="com.lodogame.ldsg.handler.log.ToolLogHandlerImpl" init-method="init"></bean>
+
+	<bean id="goldLogHandle" class="com.lodogame.ldsg.handler.log.GoldLogHandlerImpl" init-method="init"></bean>
+
+	<bean id="copperLogHandle" class="com.lodogame.ldsg.handler.log.CopperLogHandlerImpl" init-method="init"></bean>
+
+	<bean id="chatLogHandle" class="com.lodogame.ldsg.handler.log.ChatLogHandlerImpl" init-method="init"></bean>
+
+	<bean id="userLevelUpLogHandle" class="com.lodogame.ldsg.handler.log.UserLevelUpLogHandlerImpl" init-method="init"></bean>
+
+	<bean id="contestCommandHandler" class="com.lodogame.ldsg.handler.impl.ContestCommandHandlerImpl" init-method="init"></bean>
+
+	<bean id="contestPushHandler" class="com.lodogame.ldsg.handler.impl.ContestPushHandlerImpl"></bean>
+
+	<bean id="onlyOnePushHandler" class="com.lodogame.ldsg.handler.impl.OnlyOnePushHandlerImpl"></bean>
+
+	<bean id="chatCommandHandler" class="com.lodogame.ldsg.handler.impl.ChatCommandHandlerImpl" init-method="init"></bean>
+
+	<bean id="worker" class="com.lodogame.ldsg.handler.Worker" init-method="init" lazy-init="false" scope="singleton"></bean>
+
+	<bean id="heroStarEventHandle" class="com.lodogame.ldsg.handler.event.HeroStarEventHandle" init-method="init"></bean>
+
+	<bean id="muhonUpdateEventHandle" class="com.lodogame.ldsg.handler.event.MuhonUpdateEventHandle" init-method="init"></bean>
+
+	<bean id="treasureEventHandler" class="com.lodogame.ldsg.handler.event.TreasureEventHandler" init-method="init"></bean>
+
+	<bean id="updateRankEventHandle" class="com.lodogame.ldsg.handler.event.UpdateRankEventHandle" init-method="init"></bean>
+
+	<!-- 成就 -->
+	<bean id="arenaWinEventHandle" class="com.lodogame.ldsg.handler.event.ArenaWinEventHandle" init-method="init"></bean>
+	<bean id="equipDressEventHandle" class="com.lodogame.ldsg.handler.event.EquipDressEventHandle" init-method="init"></bean>
+	<bean id="praiseEventHandle" class="com.lodogame.ldsg.handler.event.PraiseEventHandle" init-method="init"></bean>
+	<bean id="equiGetEventHandle" class="com.lodogame.ldsg.handler.event.EquiGetEventHandle" init-method="init"></bean>
+	<bean id="friendAddEventHandle" class="com.lodogame.ldsg.handler.event.FriendAddEventHandle" init-method="init"></bean>
+	<bean id="contestRankEventHandle" class="com.lodogame.ldsg.handler.event.ContestRankEventHandle" init-method="init"></bean>
+	<bean id="contestBetEventHandle" class="com.lodogame.ldsg.handler.event.ContestBetEventHandle" init-method="init"></bean>
+	<bean id="pkRankEventHandle" class="com.lodogame.ldsg.handler.event.PkRankEventHandle" init-method="init"></bean>
+	<bean id="qiangHuaEventHandle" class="com.lodogame.ldsg.handler.event.QiangHuaEventHandle" init-method="init"></bean>
+	<bean id="gainStoneEventHandle" class="com.lodogame.ldsg.handler.event.GainStoneEventHandle" init-method="init"></bean>
+	<bean id="wuQiJingJieEventHandle" class="com.lodogame.ldsg.handler.event.WuQiJingJieEventHandle" init-method="init"></bean>
+	<bean id="xiaShiLevelEventHandle" class="com.lodogame.ldsg.handler.event.XiaShiLevelEventHandle" init-method="init"></bean>
+	<!-- 成就 -->
+
+	<!-- 异步插入运营日志线程池 -->
+	<bean id="logOperatorExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<property name="corePoolSize" value="10" />
+		<property name="maxPoolSize" value="50" />
+		<property name="queueCapacity" value="102400" />
+	</bean>
+	<bean id="logOperatorHandlerImpl" class="com.lodogame.ldsg.handler.LogOperatorHandlerImpl" init-method="init" lazy-init="false" scope="singleton"></bean>
+
+	<bean id="asyncDbHandlerImpl" class="com.lodogame.ldsg.handler.AsyncDbHandlerImpl" init-method="init" lazy-init="false" scope="singleton"></bean>
+
+
+	<!-- 跨服战 -->
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig"></bean>
+
+	<bean id="jedisPool" class="redis.clients.jedis.JedisPool" destroy-method="destroy">
+		<constructor-arg index="0" ref="jedisPoolConfig" />
+		<constructor-arg index="1" value="${reids.world.host}" />
+		<constructor-arg index="2" value="${reids.world.port}" />
+	</bean>
+
+	<bean id="remoteCallHandle" class="com.lodogame.game.remote.handle.RemoteCallHandleImpl">
+		<property name="sid" value="${server.sid}"></property>
+	</bean>
+
+
+</beans>

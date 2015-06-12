@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="userDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserDaoRedisImpl">
+	</bean>
+
+	<bean id="userEquipDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserEquipDaoRedisImpl">
+	</bean>
+
+	<bean id="userForcesDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserForcesDaoRedisImpl">
+	</bean>
+
+	<bean id="equipRefineDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.EquipRefineDaoRedisImpl">
+	</bean>
+
+	<bean id="equipEnchantDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.EquipEnchantDaoRedisImpl">
+	</bean>
+
+	<bean id="userHeroDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserHeroDaoRedisImpl">
+	</bean>
+
+	<bean id="systemMailDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.SystemMailDaoRedisImpl">
+	</bean>
+
+	<bean id="commandDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.CommandDaoRedisImpl">
+	</bean>
+
+	<!-- 用户扩展信息缓存 -->
+	<bean id="userExtinfoDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserExtinfoDaoRedisImpl"></bean>
+	<!-- 用户活跃度信息缓存 -->
+	<bean id="userActivityTaskDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserActivityTaskDaoRedisImpl"></bean>
+	<!-- 用户大关卡缓存 -->
+	<bean id="userSceneDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserSceneDaoRedisImpl"></bean>
+
+	<!-- 用户礼包表 -->
+	<bean id="userGiftbagDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserGiftbagDaoRedisImpl"></bean>
+	<!-- 异步运营日志队列 -->
+	<bean id="logOperatorDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.LogOperatorDaoRedisImpl"></bean>
+	<!-- 用户商城日志缓存 -->
+	<bean id="userMallLogDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserMallLogDaoRedisImpl"></bean>
+	<!-- 用户抽将信息缓存 -->
+	<bean id="userTavernDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserTavernDaoRedisImpl"></bean>
+	<!-- 用户道具缓存 -->
+	<bean id="userToolDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserToolDaoRedisImpl"></bean>
+	<!-- 用户每日获得道具数量缓存 -->
+	<bean id="userDailyGainLogDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserDailyGainLogDaoRedisImpl"></bean>
+
+	<bean id="userMallInfoDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserMallInfoDaoRedisImpl"></bean>
+
+	<bean id="userArenaInfoDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserArenaInfoDaoRedisImpl"></bean>
+
+	<bean id="userSweepInfoDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserSweepInfoDaoRedisImpl"></bean>
+
+	<bean id="userStoneDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserStoneDaoRedisImpl"></bean>
+
+	<bean id="userFriendRequestDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserFriendRequestDaoRedisImpl"></bean>
+	<bean id="friendDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.FriendDaoRedisImpl"></bean>
+
+	<bean id="userTaskDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserTaskDaoRedisImpl"></bean>
+
+	<bean id="userPraiseDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserPraiseDaoRedisImpl"></bean>
+	<bean id="userLoginLogDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserLoginLogDaoRedisImpl"></bean>
+	<bean id="userMonthlyCardDaoRedisImpl" class="com.lodogame.game.dao.impl.redis.UserMonthlyCardDaoRedisImpl"></bean>
+
+</beans>

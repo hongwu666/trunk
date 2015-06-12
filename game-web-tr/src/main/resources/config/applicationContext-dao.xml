@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	 	http://www.springframework.org/schema/aop 
+	 	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+     	http://www.springframework.org/schema/tx 
+     	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<bean id="noticeDao" class="com.lodogame.ldsg.web.dao.impl.NoticeDaoMysqlImpl"></bean>
+	<bean id="packageSettingsDao" class="com.lodogame.ldsg.web.dao.impl.PackageSettingsDaoMysqlImpl"></bean>
+	<bean id="activeCodeDao" class="com.lodogame.ldsg.web.dao.impl.ActiveCodeDaoMysqlImpl"></bean>
+	<bean id="packageInfoDao" class="com.lodogame.ldsg.web.dao.impl.PackageInfoDaoMysqlImpl"></bean>
+	<bean id="paymentOrderDao" class="com.lodogame.ldsg.web.dao.impl.PaymentOrderDaoMysqlImpl"></bean>
+	<bean id="serverStatusDaoMysqlImpl" class="com.lodogame.ldsg.web.dao.impl.ServerStatusDaoMysqlImpl"></bean>
+	<bean id="serverStatusDao" class="com.lodogame.ldsg.web.dao.impl.ServerStatusDaoCacheImpl">
+		<property name="serverStatusDaoMysqlImpl" ref="serverStatusDaoMysqlImpl"></property>
+	</bean>
+	<bean id="packageExtinfoDao" class="com.lodogame.ldsg.web.dao.impl.PackageExtinfoDaoMysqlImpl"></bean>
+	
+	<bean id="systemMOLCardPaymentDao" class="com.lodogame.ldsg.web.dao.impl.SystemMOLCardPaymentDaoCacheImpl" init-method="init">
+		<property name="systemMOLCardPaymentMysqlImpl" ref="systemMOLCardPaymentMysqlImpl"></property>
+	</bean>
+	
+	<bean id="systemMOLCardPaymentMysqlImpl" class="com.lodogame.ldsg.web.dao.impl.SystemMOLCardPaymentMysqlImpl"></bean>	
+	
+	<bean id="systemMyCardCardPaymentDao" class="com.lodogame.ldsg.web.dao.impl.SystemMyCardCardPaymentDaoCacheImpl" init-method="init">
+		<property name="systemMyCardPaymentDaoMysqlImpl" ref="systemMyCardPaymentDaoMysqlImpl"></property>
+	</bean>
+	
+	<bean id="systemMyCardPaymentDaoMysqlImpl" class="com.lodogame.ldsg.web.dao.impl.SystemMyCardPaymentDaoMysqlImpl"></bean>
+	
+	<bean id="myCardUnconfirmedOrderDaoMysqlImpl" class="com.lodogame.ldsg.web.dao.impl.MyCardUnconfirmedOrderDaoMysqlImpl"></bean>
+</beans>

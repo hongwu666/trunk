@@ -1,0 +1,58 @@
+
+#common
+10.6.11.232 battle.mysql.ltcs.lodogame.com
+42.62.29.231 admin.ltcsgame.lodogame.com
+10.6.11.232 common.mysql.ltcs.lodogame.com
+
+#redis
+127.0.0.1 s1.redis.ltcs.lodogame.com
+127.0.0.1 s2.redis.ltcs.lodogame.com
+127.0.0.1 s3.redis.ltcs.lodogame.com
+127.0.0.1 s4.redis.ltcs.lodogame.com
+127.0.0.1 s5.redis.ltcs.lodogame.com
+127.0.0.1 s6.redis.ltcs.lodogame.com
+127.0.0.1 s7.redis.ltcs.lodogame.com
+127.0.0.1 s8.redis.ltcs.lodogame.com
+127.0.0.1 s9.redis.ltcs.lodogame.com
+127.0.0.1 s10.redis.ltcs.lodogame.com
+
+
+#s1
+10.6.11.232 s1.mysql.ltcs.lodogame.com
+10.6.13.37 s1.log.mysql.ltcs.lodogame.com
+
+#s2
+10.6.25.232 s2.mysql.ltcs.lodogame.com
+10.6.13.37 s2.log.mysql.ltcs.lodogame.com
+
+#s3
+10.6.28.38 s3.mysql.ltcs.lodogame.com
+10.6.13.37 s3.log.mysql.ltcs.lodogame.com
+
+#s4
+10.6.32.243 s4.mysql.ltcs.lodogame.com
+10.6.13.37 s4.log.mysql.ltcs.lodogame.com
+
+#s5
+10.6.24.195 s5.mysql.ltcs.lodogame.com
+10.6.13.37 s5.log.mysql.ltcs.lodogame.com
+
+#s6
+10.6.11.232 s6.mysql.ltcs.lodogame.com
+10.6.30.67 s6.log.mysql.ltcs.lodogame.com
+
+#s7
+10.6.25.232 s7.mysql.ltcs.lodogame.com
+10.6.30.67 s7.log.mysql.ltcs.lodogame.com
+
+#s8
+10.6.28.38 s8.mysql.ltcs.lodogame.com
+10.6.30.67 s8.log.mysql.ltcs.lodogame.com
+
+#s9
+10.6.32.243 s9.mysql.ltcs.lodogame.com
+10.6.30.67 s9.log.mysql.ltcs.lodogame.com
+
+#s10
+10.6.24.195 s10.mysql.ltcs.lodogame.com
+10.6.30.67 s10.log.mysql.ltcs.lodogame.com

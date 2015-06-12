@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	 	http://www.springframework.org/schema/aop 
+	 	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+     	http://www.springframework.org/schema/tx 
+     	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="*"></context:component-scan>
+
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+				<value>classpath:jedis.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="springDSN" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url" value="${jdbc.url}">
+		</property>
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+		<property name="maxActive" value="${jdbc.maxActive}"></property>
+	</bean>
+
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" abstract="false" lazy-init="false" autowire="default">
+		<property name="dataSource">
+			<ref bean="springDSN" />
+		</property>
+	</bean>
+
+	<bean id="jdbc" class="com.lodogame.common.jdbc.JdbcImpl">
+		<property name="jdbcTemplate">
+			<ref bean="jdbcTemplate" />
+		</property>
+	</bean>
+
+	<bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+		<property name="corePoolSize" value="8" />
+		<property name="maxPoolSize" value="128" />
+		<property name="queueCapacity" value="102400" />
+	</bean>
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<!--最大连接数 -->
+		<property name="maxActive" value="${redis.maxActive}" />
+		<!--定时对线程池中空闲的链接进行validateObject校验 -->
+		<property name="testWhileIdle" value="true" />
+	</bean>
+
+	<bean id="jedisPool" class="redis.clients.jedis.JedisPool" destroy-method="destroy">
+		<constructor-arg index="0" ref="jedisPoolConfig" />
+		<constructor-arg index="1" value="${redis.host}" />
+		<constructor-arg index="2" value="${redis.port}" />
+	</bean>
+
+	<bean id="battleService" class="com.lodogame.ldsg.service.impl.BattleServiceImpl" scope="singleton" init-method="init">
+		<property name="executer" ref="taskExecutor"></property>
+	</bean>
+
+	<bean id="remoteCallHandle" class="com.lodogame.game.remote.handle.RemoteCallHandleImpl" init-method="init">
+		<property name="sid" value="world"></property>
+	</bean>
+
+	<bean id="contestDao" class="com.lodogame.ldsg.world.dao.impl.ContestDaoMysqlImpl" />
+
+	<bean id="contestService" class="com.lodogame.ldsg.world.service.impl.ContestServiceImpl" scope="singleton" init-method="init" />
+
+	<bean id="WarRemote" class="com.lodogame.ldsg.world.action.WarAction" />
+	<bean id="ContestRemote" class="com.lodogame.ldsg.world.action.ContestAction" />
+
+
+</beans>

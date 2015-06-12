@@ -1,0 +1,914 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/36</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 15 10:11:18 CST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3087 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest</td>
+<td><div><pre>java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:333)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:133)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;userDao&apos; defined in class path resource [applicationContext-dao.xml]: Cannot resolve reference to bean &apos;userDaoMysqlImpl&apos; while setting bean property &apos;userDaoMysqlImpl&apos;; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;userDaoMysqlImpl&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name &apos;systemEquipDaoMysqlImpl&apos; defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1327)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1085)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:84)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 38 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;userDaoMysqlImpl&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name &apos;systemEquipDaoMysqlImpl&apos; defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1073)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 54 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name &apos;systemEquipDaoMysqlImpl&apos; defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 62 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name &apos;systemEquipDaoMysqlImpl&apos; defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1261)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1330)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:317)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:185)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:833)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:707)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 64 more
+Caused by: java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:257)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:408)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1253)
+	... 72 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1748850628", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1748850628'><pre>java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:333)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;userDao&apos; defined in class path resource [applicationContext-dao.xml]: Cannot resolve reference to bean &apos;userDaoMysqlImpl&apos; while setting bean property &apos;userDaoMysqlImpl&apos;; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;userDaoMysqlImpl&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name &apos;systemEquipDaoMysqlImpl&apos; defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1327)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1085)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:84)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 38 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name &apos;userDaoMysqlImpl&apos;: Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name &apos;systemEquipDaoMysqlImpl&apos; defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1073)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 54 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name &apos;systemEquipDaoMysqlImpl&apos; defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 62 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name &apos;systemEquipDaoMysqlImpl&apos; defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1261)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1330)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:317)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:185)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:833)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:707)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 64 more
+Caused by: java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:257)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:408)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1253)
+	... 72 more
+</pre></div></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest@30b8afce</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest@30b8afce</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest.setUpBeforeClass()'><b>setUpBeforeClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.setUpBeforeClass()'><b>setUpBeforeClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest.setUpBeforeClass()'><b>setUpBeforeClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.setUpBeforeClass()'><b>setUpBeforeClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest.springTestContextBeforeTestClass()'><b>springTestContextBeforeTestClass</b><br>Test class: com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest.springTestContextPrepareTestInstance()'><b>springTestContextPrepareTestInstance</b><br>Test class: com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest.springTestContextBeforeTestMethod()'><b>springTestContextBeforeTestMethod</b><br>Test class: com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest.getList()'><b>getList</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest@e1a8f49</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest.getPaymenList()'><b>getPaymenList</b><br>Test class: com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest@366953d</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.TavernDropToolDaoTest.getTavernDropToolList()'><b>getTavernDropToolList</b><br>Test class: com.lodogame.game.dao.TavernDropToolDaoTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.TavernDropToolDaoTest@e9453f9</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest.reduceUserTool()'><b>reduceUserTool</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest@b454096</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.add()'><b>add</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.add()'><b>add</b><br>Test class: com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.add()'><b>add</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest.addOrUpdateUserGiftbag()'><b>addOrUpdateUserGiftbag</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.addPower()'><b>addPower</b><br>Test class: com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.addUserDailyGain()'><b>addUserDailyGain</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.backUserPkInfo()'><b>backUserPkInfo</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest.get()'><b>get</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest.getBuyMoney()'><b>getBuyMoney</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest.getByPartnerUserId()'><b>getByPartnerUserId</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.getByRank()'><b>getByRank</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest.getForcesMonsterList()'><b>getForcesMonsterList</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest.getLast()'><b>getLast</b><br>Test class: com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Method getLast requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1856883009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1856883009'><pre>org.testng.TestNGException: 
+Method getLast requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:370)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</pre></div></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest@30b8afce</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getLastOnlineTest()'><b>getLastOnlineTest</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.getList()'><b>getList</b><br>Test class: com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.getReceivedOrderIdList()'><b>getReceivedOrderIdList</b><br>Test class: com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest.getSceneForcesList()'><b>getSceneForcesList</b><br>Test class: com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest.getTaskList()'><b>getTaskList</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest.getTaskList()'><b>getTaskList</b><br>Test class: com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.getUserCurrentForces()'><b>getUserCurrentForces</b><br>Test class: com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.getUserDailyGain()'><b>getUserDailyGain</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getUserOnline()'><b>getUserOnline</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getUserOnlineTest()'><b>getUserOnlineTest</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.isLogin()'><b>isLogin</b><br>Test class: com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb</td></tr>
+<tr>
+<td title='com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest.testAdd()'><b>testAdd</b><br>Test class: com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.testAdd()'><b>testAdd</b><br>Test class: com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testAddUserEquip()'><b>testAddUserEquip</b><br>Test class: com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testAddUserHero()'><b>testAddUserHero</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testDelete()'><b>testDelete</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.testGet()'><b>testGet</b><br>Test class: com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetCount()'><b>testGetCount</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetUseHeroList()'><b>testGetUseHeroList</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testGetUserEquip()'><b>testGetUserEquip</b><br>Test class: com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.testGetUserForcesList()'><b>testGetUserForcesList</b><br>Test class: com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetUserHeroInfo()'><b>testGetUserHeroInfo</b><br>Test class: com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest.testGetUserSceneList()'><b>testGetUserSceneList</b><br>Test class: com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18</td></tr>
+<tr>
+<td title='com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testUpdateEquipLevel()'><b>testUpdateEquipLevel</b><br>Test class: com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest</td>
+<td></td>
+<td>0</td>
+<td>com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd</td></tr>
+</table><p>
+</body>
+</html>

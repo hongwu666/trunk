@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="36" failed="1" total="41" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="3087" started-at="2015-05-15T02:11:18Z" finished-at="2015-05-15T02:11:21Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="3087" started-at="2015-05-15T02:11:18Z" finished-at="2015-05-15T02:11:21Z">
+      <class name="com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest">
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest.getForcesMonsterList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getForcesMonsterList()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest@55433567]" name="getForcesMonsterList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getForcesMonsterList -->
+      </class> <!-- com.lodogame.game.dao.impl.cache.SystemForcesMonsterDaoCacheImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testAddUserHero()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="testAddUserHero()[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="testAddUserHero" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddUserHero -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testDelete()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="testDelete()[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="testDelete" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetCount()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="testGetCount()[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="testGetCount" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCount -->
+        <test-method status="SKIP" signature="testGetUseHeroList()[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="testGetUseHeroList" duration-ms="9" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUseHeroList -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetUseHeroList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="testGetUserHeroInfo()[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="testGetUserHeroInfo" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserHeroInfo -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest.testGetUserHeroInfo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest@68dfb213]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.dao.impl.mysql.UserHeroMysqlImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="addPower()[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="addPower" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPower -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.addPower()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="testAdd()[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="testAdd" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdd -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.testAdd()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="testGet()[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="testGet" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGet -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest.testGet()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest@717f0c8f]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.dao.impl.mysql.UserDaoMysqlImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testAddUserEquip()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="testAddUserEquip()[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="testAddUserEquip" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddUserEquip -->
+        <test-method status="SKIP" signature="testUpdateEquipLevel()[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="testUpdateEquipLevel" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateEquipLevel -->
+        <test-method status="SKIP" signature="testGetUserEquip()[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="testGetUserEquip" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserEquip -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testGetUserEquip()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest@2dc719bd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest.testUpdateEquipLevel()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- com.lodogame.dao.impl.mysql.UserEquipDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest">
+        <test-method status="FAIL" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:18Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:18Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Failed to load ApplicationContext]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:308)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:333)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextPrepareTestInstance(AbstractTestNGSpringContextTests.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao' defined in class path resource [applicationContext-dao.xml]: Cannot resolve reference to bean 'userDaoMysqlImpl' while setting bean property 'userDaoMysqlImpl'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDaoMysqlImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name 'systemEquipDaoMysqlImpl' defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1327)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1085)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:425)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:84)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:280)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:304)
+	... 38 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDaoMysqlImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name 'systemEquipDaoMysqlImpl' defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1073)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:192)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 54 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.lodogame.common.jdbc.Jdbc com.lodogame.game.dao.impl.mysql.UserDaoMysqlImpl.jdbc; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name 'systemEquipDaoMysqlImpl' defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:84)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 62 more
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl] for bean with name 'systemEquipDaoMysqlImpl' defined in class path resource [applicationContext-mysql.xml]; nested exception is java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1261)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1330)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:317)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:185)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:833)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:707)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 64 more
+Caused by: java.lang.ClassNotFoundException: com.lodogame.game.dao.impl.mysql.SystemEquipDaoMysqlImpl
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:257)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:408)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1253)
+	... 72 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:18Z" finished-at="2015-05-15T10:11:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="testAdd()[pri:0, instance:com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989]" name="testAdd" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdd -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="11" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest.testAdd()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest@43cfd989]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.redis.CommandDaoRedisImplTest -->
+      <class name="com.lodogame.game.dao.TavernDropToolDaoTest">
+        <test-method status="PASS" signature="getTavernDropToolList()[pri:0, instance:com.lodogame.game.dao.TavernDropToolDaoTest@e9453f9]" name="getTavernDropToolList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTavernDropToolList -->
+      </class> <!-- com.lodogame.game.dao.TavernDropToolDaoTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest">
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest.testGetUserSceneList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="testGetUserSceneList()[pri:0, instance:com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18]" name="testGetUserSceneList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserSceneList -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest@e478e18]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.dao.impl.mysql.UserSceneDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="setUpBeforeClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="SKIP" signature="addUserDailyGain()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="addUserDailyGain" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserDailyGain -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.addUserDailyGain()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getUserDailyGain()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="getUserDailyGain" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserDailyGain -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest@1dafb644]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest.getUserDailyGain()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserDailyGainLogDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="setUpBeforeClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="add()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="add" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.add()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getLastOnlineTest()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="getLastOnlineTest" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLastOnlineTest -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getLastOnlineTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getUserOnline()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="getUserOnline" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserOnline -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getUserOnline()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="getUserOnlineTest()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="getUserOnlineTest" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserOnlineTest -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.isLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="isLogin()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="isLogin" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isLogin -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest.getUserOnlineTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest@7629a4cb]" name="springTestContextAfterTestClass" is-config="true" duration-ms="13" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserOnlineLogDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="get()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308]" name="get" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get -->
+        <test-method status="SKIP" signature="setUpBeforeClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest.get()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest@6f10b308]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserExtinfoDaoMysqlImplTest -->
+      <class name="com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getUserCurrentForces()[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="getUserCurrentForces" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserCurrentForces -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.getUserCurrentForces()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="SKIP" signature="testGetUserForcesList()[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="testGetUserForcesList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserForcesList -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest@14552da4]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest.testGetUserForcesList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- com.lodogame.dao.impl.mysql.UserForcesDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getTaskList()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9]" name="getTaskList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTaskList -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest.getTaskList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest@2c1507e9]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.cache.SystemDailyTaskDaoCacheImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest">
+        <test-method status="PASS" signature="reduceUserTool()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest@b454096]" name="reduceUserTool" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reduceUserTool -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserToolDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest">
+        <test-method status="PASS" signature="getPaymenList()[pri:0, instance:com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest@366953d]" name="getPaymenList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPaymenList -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.PaymentLogDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="init" is-config="true" duration-ms="9" started-at="2015-05-15T10:11:18Z" finished-at="2015-05-15T10:11:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="add()[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="add" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.add()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getList()[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="getList" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getList -->
+        <test-method status="SKIP" signature="getReceivedOrderIdList()[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="getReceivedOrderIdList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReceivedOrderIdList -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.getList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest.getReceivedOrderIdList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest@5a4bccdd]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.cache.UserPayRewardDaoCacheImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest">
+        <test-method status="PASS" signature="getList()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest@e1a8f49]" name="getList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getList -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.SystemGoldSetDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="getSceneForcesList()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd]" name="getSceneForcesList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSceneForcesList -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest.getSceneForcesList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest@1feb0edd]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.SystemForcesDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest@30b8afce]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest@30b8afce]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="FAIL" signature="getLast(int)[pri:0, instance:com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest@30b8afce]" name="getLast" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method getLast requires 1 parameters but 0 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method getLast requires 1 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:370)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLast -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest@30b8afce]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.PackageInfoDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="getByPartnerUserId()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba]" name="getByPartnerUserId" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getByPartnerUserId -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest.getByPartnerUserId()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest@6dc5f0ba]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserMapperDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="setUpBeforeClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getBuyMoney()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5]" name="getBuyMoney" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBuyMoney -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest.getBuyMoney()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest@2ffce3d5]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.SystemVipLevelDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest">
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getTaskList()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c]" name="getTaskList" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTaskList -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest.getTaskList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest@6275a43c]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.cache.SystemTaskDaoCacheImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.add()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="add()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="add" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="backUserPkInfo()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="backUserPkInfo" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backUserPkInfo -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="11" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.getByRank()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest.backUserPkInfo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="getByRank()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="getByRank" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getByRank -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest@5f664de3]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserPkInfoDaoMysqlImplTest -->
+      <class name="com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest">
+        <test-method status="SKIP" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="SKIP" signature="springTestContextBeforeTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="SKIP" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest.addOrUpdateUserGiftbag()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="SKIP" signature="addOrUpdateUserGiftbag()[pri:0, instance:com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest@29c6e6e]" name="addOrUpdateUserGiftbag" duration-ms="0" started-at="2015-05-15T10:11:21Z" finished-at="2015-05-15T10:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOrUpdateUserGiftbag -->
+      </class> <!-- com.lodogame.game.dao.impl.mysql.UserGiftbagDaoMysqlImplTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

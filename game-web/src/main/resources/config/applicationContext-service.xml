@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	 	http://www.springframework.org/schema/aop 
+	 	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+     	http://www.springframework.org/schema/tx 
+     	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="*"></context:component-scan>
+
+	<bean id="webApiService" class="com.lodogame.ldsg.web.service.impl.WebApiServiceImpl"
+		scope="singleton"></bean>
+	<bean id="serverServer" class="com.lodogame.ldsg.web.service.impl.ServerServiceImpl"
+		scope="singleton"></bean>
+	<bean id="diyiboPartner" class="com.lodogame.ldsg.web.service.impl.DiyiboServiceImpl"
+		scope="singleton"></bean>
+	<bean id="applePartner" class="com.lodogame.ldsg.web.service.impl.AppleServiceImpl"
+		scope="singleton"></bean>
+	<bean id="serviceFactory" class="com.lodogame.ldsg.web.factory.PartnerServiceFactory"
+		scope="singleton"></bean>
+	<bean id="ucPartner" class="com.lodogame.ldsg.web.service.impl.UcServiceImpl"
+		scope="singleton"></bean>
+	<bean id="qhPartner" class="com.lodogame.ldsg.web.service.impl.QihooServiceImpl"
+		scope="singleton"></bean>
+	<bean id="bdPartner" class="com.lodogame.ldsg.web.service.impl.BaiduServiceImpl"
+		scope="singleton"></bean>
+	<bean id="wdPartner" class="com.lodogame.ldsg.web.service.impl.WandoujiaServiceImpl"
+		scope="singleton"></bean>
+	<bean id="dlPartner" class="com.lodogame.ldsg.web.service.impl.DangleServiceImpl"
+		scope="singleton"></bean>
+	<bean id="xmPartner" class="com.lodogame.ldsg.web.service.impl.XiaomiServiceImpl"
+		scope="singleton"></bean>
+	<bean id="azPartner" class="com.lodogame.ldsg.web.service.impl.AnZhiServiceImpl"
+		scope="singleton"></bean>
+	<bean id="oppoPartner" class="com.lodogame.ldsg.web.service.impl.OppoServiceImpl"
+		scope="singleton"></bean>
+	<bean id="huaweiPartner" class="com.lodogame.ldsg.web.service.impl.HuaweiServiceImpl"
+		scope="singleton"></bean>
+	<bean id="jinliPartner" class="com.lodogame.ldsg.web.service.impl.JinLiServiceImpl"
+		scope="singleton"></bean>
+	<bean id="kupaiPartner" class="com.lodogame.ldsg.web.service.impl.KupaiServiceImpl"
+		scope="singleton"></bean>
+	<bean id="lenovoPartner" class="com.lodogame.ldsg.web.service.impl.LenovoServiceImpl"
+		scope="singleton"></bean>
+	<bean id="zhangyuePartner" class="com.lodogame.ldsg.web.service.impl.ZhangYueServiceImpl"
+		scope="singleton"></bean>
+
+</beans>
